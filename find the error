@@ -1,0 +1,27 @@
+public class MyApp
+{
+private int pid;
+private String name;
+private double price;
+private boolean isAvailable;
+public MyApp(int pid,String name,double  price,boolean isAvailable)
+{;
+    this.pid=pid;
+    this.name=name;
+    this.price=price;
+    this.isAvailable=isAvailable;
+}
+public void showDetails()
+{
+    System.out.println("Product id:"+pid);
+    System.out.println("Product name:"+name);
+    System.out.println("Product price:"+price);
+    System.out.println("Product isAvailable:"+isAvailable);
+}
+    public static void main(String[] args) {
+    MyApp obj=new MyApp("20771","Cricket Ball","4300.0","Yes");
+    obj.showDetails();
+       
+    }
+}
+
